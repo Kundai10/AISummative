@@ -7,7 +7,7 @@ xgb.__version__ = '1.4.2'
 import streamlit as st
 import unicodedata
 
-loaded_model = pickle.load(open('C:/Users/HP/OneDrive/Desktop/ML_model/model.pkl','rb'))
+loaded_model = pickle.load(open('model.pkl','rb'))
 
 def bp_prediction(input_data):
     input_data = [unicodedata.normalize('NFKD', str(x)).encode('ascii', 'ignore') for x in input_data]
