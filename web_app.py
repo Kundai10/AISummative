@@ -7,7 +7,7 @@ xgb.__version__ = '1.4.2'
 import streamlit as st
 import unicodedata
 
-loaded_model = pickle.load(open('C:/Users/HP/OneDrive/Desktop/ML_model/model.pkl','rb'))
+loaded_model = pickle.load(open('model.pkl','rb'))
 
 def is_valid_number(value):
     if value.strip() == '':
