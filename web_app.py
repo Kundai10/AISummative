@@ -16,7 +16,9 @@ def bp_prediction(input_data):
 
     # Validate input data
     for data in input_data:
-        if not data.strip().replace('.', '', 1).isdigit():
+        try:
+            float_data = float(data)
+        except ValueError:
             return "Invalid input data. Please enter numeric values only."
 
     # Convert input data to NumPy array
@@ -38,6 +40,7 @@ def bp_prediction(input_data):
         return "Person does not have High Blood Pressure"
     else:
         return "Person has High Blood Pressure"
+
 
     
     
