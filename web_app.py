@@ -13,7 +13,7 @@ loaded_model = pickle.load(open('model.pkl','rb'))
 
 def bp_prediction(input_data):
     input_data = [unicodedata.normalize('NFKD', str(x)).encode('ascii', 'ignore') for x in input_data]
-    input_data_as_numpy_array = np.asarray(input_data, dtype=np.float32)
+    input_data_as_numpy_array = np.asarray(input_data)
     input_data_reshaped = input_data_as_numpy_array.reshape(1, -1)
     
     try:
