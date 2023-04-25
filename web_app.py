@@ -7,7 +7,7 @@ xgb.__version__ = '1.4.2'
 import streamlit as st
 import unicodedata
 
-loaded_model = pickle.load(open('model.pkl','rb'))
+loaded_model = pickle.load(open('model(1).pkl','rb'))
 
 
 
