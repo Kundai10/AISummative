@@ -1,9 +1,9 @@
 # AISummative
-To run the web_app.py file run the command streamlite run web_app.py in your terminal.
+To run the web_app.py file in your local host; run the command streamlite run web_app.py in your terminal.
 
 
 Link to the web app
-https://kundai10-aisummative-web-app-renunv.streamlit.app/
+https://kundai10-aisummative-web-app-qtyuii.streamlit.app/
 
 
 Google Cobal Source Code:
