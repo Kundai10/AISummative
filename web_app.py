@@ -3,7 +3,7 @@
 import numpy as np
 import pickle
 import xgboost as xgb
-xgb.__version__ = '1.4.2'
+xgb.__version__ = '1.7.5'
 import streamlit as st
 import unicodedata
 
