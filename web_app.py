@@ -54,8 +54,7 @@ def main():
     chronic_kidney_disney = st.text_input("Chronic Kidney Disease")
     adrenal_thyroid_disorders = st.text_input("Adrenal and Thyroid Disorders")
     
-    
-   input_data = [bp_abnormality, level_of_hb, geneteic_pedegree, age, bmi, sex, smoking, physical_activity,
+    input_data = [level_of_hb, geneteic_pedegree, age, bmi, sex, smoking, physical_activity,
                   salt_content_in_diet, alcohol_consumption, level_of_stress, chronic_kidney_disney,
                   adrenal_thyroid_disorders]
     
