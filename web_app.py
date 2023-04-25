@@ -6,6 +6,7 @@ import xgboost as xgb
 xgb.__version__ = '1.4.2'
 import streamlit as st
 import unicodedata
+import sklearn
 
 loaded_model = pickle.load(open('model.pkl','rb'))
 
