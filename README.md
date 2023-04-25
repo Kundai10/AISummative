@@ -1,10 +1,12 @@
 # AISummative
 To run the web_app.py file run the command streamlite run web_app.py in your terminal.
 
+
 Link to the web app
 https://kundai10-aisummative-web-app-renunv.streamlit.app/
 
 Video recording below
+In the first 30 seconds of the app, It is supposed to be the app predicts High Blood Pressure and not Diabetes
 
 
 
