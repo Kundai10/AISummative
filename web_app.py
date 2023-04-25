@@ -13,29 +13,17 @@ loaded_model = pickle.load(open('model.pkl','rb'))
 
 def bp_prediction(input_data):
     input_data = [unicodedata.normalize('NFKD', str(x)).encode('ascii', 'ignore') for x in input_data]
-
-    # Validate input data
-    for data in input_data:
-        try:
-            float_data = float(data)
-        except ValueError:
-            return "Invalid input data. Please enter numeric values only."
-
-    # Convert input data to NumPy array
-    try:
-        input_data_as_numpy_array = np.asarray(input_data, dtype=np.float32)
-    except Exception as e:
-        st.write(f"An exception occurred during data conversion: {e}")
-        return
-
+    input_data_as_numpy_array = np.asarray(input_data, dtype=np.float32)
     input_data_reshaped = input_data_as_numpy_array.reshape(1, -1)
-
+    
     try:
         prediction = loaded_model.predict(input_data_reshaped)
     except Exception as e:
         st.write(f"An exception occurred during prediction: {e}")
         return
-
+    
+    print(prediction)
+    
     if (prediction[0]==0):
         return "Person does not have High Blood Pressure"
     else:
