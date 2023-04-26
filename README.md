@@ -1,5 +1,8 @@
 # AISummative
-To run the web_app.py file in your local host; run the command streamlite run web_app.py in your terminal.
+To run the web_app.py file in your local host
+Install the packages that are in the requirements.txt file
+run the command streamlite run web_app.py in your terminal.
+The local host should open automatically displaying the web app
 
 
 Link to the web app
